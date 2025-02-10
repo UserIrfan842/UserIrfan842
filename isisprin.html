@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah SPRIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Arsip Digital">
+        <h1>Tambah SPRIN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kembali ke Halaman Utama</a></li>
+                <li><a href="riwayatsprin.html">Daftar SPRIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form id="formSPRIN" onsubmit="saveSPRIN(event)">
+                <label for="tanggal">Tanggal Surat:</label>
+                <input type="date" id="tanggal" required><br>
+
+                <label for="noSurat">Nomor Surat:</label>
+                <input type="text" id="noSurat" required><br>
+
+                <label for="perihal">Perihal:</label>
+                <input type="text" id="perihal" required><br>
+
+                <label for="keterangan">Keterangan:</label>
+                <textarea id="keterangan" required></textarea><br>
+
+                <label for="konseptor">Konseptor:</label>
+                <input type="text" id="konseptor" required><br>
+
+                <button type="submit">Simpan SPRIN</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>
